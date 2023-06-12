@@ -16,5 +16,5 @@ Time
     Sleep                10                          # Wait for screen to change
     ${current_image}=    LogScreenshot
     ${mask_image}=       ../resources/mask-image.png
-    CompareImages        ${current_image}            ${ref_image}                tolerance=0.5     # small threshold to make this pass
+    CompareImages        ${current_image}            ${ref_image}                ${mask_image}     tolerance=0.5               # small threshold to make this pass
     CompareImages        ${current_image}            ${ref_image}                tolerance=0.99    # larger threshold to make this fail
