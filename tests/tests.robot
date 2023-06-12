@@ -4,6 +4,9 @@ Library                  QImage
 Suite Setup              OpenBrowser                 about:blank                 chrome
 Suite Teardown           CloseAllBrowsers
 
+*** Variables ***
+${BASE_IMAGE_PATH}          ${CURDIR}${/}..${/}resources${/}images
+
 *** Test Cases ***
 Time
     OpenBrowser          https://time.is             chrome
