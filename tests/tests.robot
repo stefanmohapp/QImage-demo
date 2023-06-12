@@ -10,8 +10,6 @@ Time
     ClickText            Agree               # dismiss cookie popup
     Sleep                3                   Wait for elements to load
 
-    # in this case we take ref image first.
-    # Normally we would have a saved image for reference.
     ${ref_image}=        LogScreenshot
     Sleep                10                  # Wait for screen to change
     ${current_image}=    LogScreenshot
