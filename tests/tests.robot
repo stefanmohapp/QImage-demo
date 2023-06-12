@@ -13,5 +13,6 @@ Time
     ${ref_image}=        LogScreenshot
     Sleep                10                  # Wait for screen to change
     ${current_image}=    LogScreenshot
+    
     CompareImages        ${current_image}    ${ref_image}                tolerance=0.5     # small threshold to make this pass
     CompareImages        ${current_image}    ${ref_image}                tolerance=0.99    # larger threshold to make this fail
